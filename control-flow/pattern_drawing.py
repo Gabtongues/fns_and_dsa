@@ -1,11 +1,11 @@
-size=int(input("Enter the size of the pattern:."))
-if size<=0:
+size = int(input("Enter the size of the pattern: "))
+if size <= 0:
     print("Please enter a posiitive interger pattern size.")
 else:
-    row_count=0
+    row_count = 0
     while row_count<size:
         for _ in range(size):
             print("*", end="")
-            row_count+=1
+            row_count += 1
 except ValueError:
 print("invalid input, please enter an interger")
