@@ -1,4 +1,4 @@
-size=int(input("enter the size of the pattern."))
+size=int(input("enter the size of the pattern:."))
 if size<=0:
     print("please enter a posiitive interger pattern size.")
 else:
