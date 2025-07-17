@@ -21,5 +21,6 @@ else:
     message = message.replace("Reminder", "Note")
     message += ". Consider completing it when you have free time."
 
-
+message = f"Reminder: '{task}' ..."
 print(message)
+
