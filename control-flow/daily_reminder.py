@@ -4,7 +4,7 @@ priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
 
 
-match priority.lower():
+match priority:
     case "high":
         message = f"Reminder: '{task}' is a high priority task"
     case "medium":
@@ -15,7 +15,7 @@ match priority.lower():
         message = f"Note: '{task}' has an unknown priority level"
 
 
-if time_bound.lower() == "yes":
+if time_bound == "yes":
     message += " that requires immediate attention today!"
 else:
     message = message.replace("Reminder", "Note")
